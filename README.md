@@ -73,7 +73,7 @@ Prerequisites
 Node.js & npm
 
 Clone the repo:
-git clone https://github.com/your-username/blogshelf-task-manager.git
+git clone git remote add origin https://github.com/Arnav242005/Blogshelf.git
 cd blogshelf-task-manager
 npm install
 
