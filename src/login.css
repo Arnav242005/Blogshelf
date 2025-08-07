@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.logincont {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formdiv {
+  height: auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginh2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #6a0dad;
+  margin-bottom: 30px;
+}
+
+.loginbtn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 20px;
+  background: #f1f3f6;
+  color: #6a0dad;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.otherp {
+  margin-top: 5px;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+  font-size: 14px;
+}

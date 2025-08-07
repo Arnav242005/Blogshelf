@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+📝 Blogshelf - Task Manager App
+A React-based Task Manager that allows users to register, log in, manage tasks with automatic expiration, and receive email confirmations. It features route protection, glassmorphic + neumorphic UI, and task-specific user tracking.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Features
+✅ User Registration & Login (with validations)
 
-## Available Scripts
+🔐 Protected Routes using React Router
 
-In the project directory, you can run:
+📧 Email notification on successful registration via EmailJS
 
-### `npm start`
+🔑 Password Generator (customizable with useRef and useCallback)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📆 Task Management with:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Title, Description, Date
 
-### `npm test`
+User-specific task storage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Automatic task deletion after 7 days
 
-### `npm run build`
+💡 Responsive UI with modern glassmorphism + neumorphism
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📦 State Management using React Context API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🌐 Axios for API communication
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✅ Form Handling via React Hook Form
 
-### `npm run eject`
+🧰 Tech Stack
+Tech	Usage
+React	UI Development
+React Router DOM	Routing & Route Protection
+React Hook Form	Form handling & validation
+Axios	API Requests
+EmailJS	Email Notifications
+Context API	Global Auth State
+useRef, useCallback	Hooks for password generator
+MockAPI	Fake Backend for tasks/users
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🔐 Route Protection
+Users can only access AllTasks and TaskForm pages after login. Direct URL access is blocked and redirects to login.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📅 Task Expiration Logic
+Each task has a date field. A background check runs on login, and:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If the task is older than 7 days, it's automatically deleted from the database.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+📧 Email Integration
+EmailJS is used to:
 
-## Learn More
+Send confirmation email upon successful registration.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🔑 Password Generator
+Users can:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Auto-generate secure passwords
 
-### Code Splitting
+Customize length and include numbers/special characters
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Built using useRef, useCallback for optimal performance
 
-### Analyzing the Bundle Size
+🖌️ UI Design
+Modern and minimal using:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Glassmorphism for buttons and cards
 
-### Making a Progressive Web App
+Neumorphism for inputs and task display areas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Fully responsive for mobile and desktop
 
-### Advanced Configuration
+🛠️ Getting Started
+Prerequisites
+Node.js & npm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Clone the repo:
+git clone https://github.com/your-username/blogshelf-task-manager.git
+cd blogshelf-task-manager
+npm install
 
-### Deployment
+Run the app
+npm start
+🧪 Testing
+Forms are tested with invalid and valid inputs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Email confirmation checked via EmailJS dashboard
 
-### `npm run build` fails to minify
+Task expiration tested using mock date entries
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📬 Connect
+Feel free to reach out or raise issues!
+
+Demo:- 

@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.maindiv {
+  height: 100vh;
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.maindiv h2 {
+  color: #a855f7;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(168, 85, 247, 0.2);
+}
+
+.taskcardcomp {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+}
+@media (max-width: 600px) {
+  .taskcardcomp {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .taskcards {
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    background: linear-gradient(135deg, #fef6ff, #f5ebff);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin: 7px 0px;
+  }
+
+  .titlep {
+    color: #a855f7;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .descp {
+    font-size: 13px;
+    color: #5c5470;
+    margin-bottom: 6px;
+  }
+
+  .datep {
+    font-size: 11px;
+    text-align: right;
+    color: #a39bb1;
+  }
+
+  .icon-button {
+    background: linear-gradient(135deg, #c084fc, #a855f7);
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    font-size: 14px;
+    margin-left: 5px;
+    border-radius: 8px;
+  }
+
+  .icon-button:hover {
+    background: linear-gradient(135deg, #9333ea, #7e22ce);
+  }
+
+  .save-button {
+    background-color: #a855f7;
+  }
+
+  .cancel-button {
+    background-color: #d1c4e9;
+    color: #333;
+  }
+
+  .save-button,
+  .cancel-button {
+    font-size: 12px;
+    padding: 4px 6px;
+    margin: 0 2px;
+  }
+}
+
+.taskcards {
+  background: linear-gradient(135deg, #fff5f9, #ffffff);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.taskcards:hover {
+  transform: translateY(-5px);
+}
+
+.datep {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 14px;
+  color: #a39bb1;
+}
+
+.titlep {
+  font-weight: 700;
+  font-size: 20px;
+  color: #a855f7;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.descp {
+  font-size: 15px;
+  color: #5c5470;
+  margin-bottom: 30px;
+}
+
+.buttonspan {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.icon-button {
+  background: linear-gradient(135deg, #c084fc, #a855f7);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.icon-button:hover {
+  background: linear-gradient(135deg, #9333ea, #7e22ce);
+}
+
+.icon-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.edit-input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.save-button,
+.cancel-button {
+  margin-right: 8px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #a855f7;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #d1c4e9;
+}
+
+.notasks {
+  text-align: center;
+  margin-top: 50px;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.add-task-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #6a0dad;
+  font-weight: 500;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.add-task-link:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #4b0082;
+  transform: scale(1.05);
+}

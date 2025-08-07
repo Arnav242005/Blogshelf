@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.registerhead{
+    font-size: 20px;
+    color: #6a0dad;
+}
+
+.formdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerbtn{
+  background: #f1f3f6;
+  color: #6a0dad;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 10px;
+  width: 100%;
+  padding: 14px;
+}
+
+.genpassheading{
+    font-size: 20px;
+    color: #6a0dad;
+}
+
+.passwordgenerator{
+    margin-top: 30px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 30px;
+    gap: 19px;
+}
+
+.firstrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.copybtn{
+  background: #f1f3f6;
+  color: #6a0dad;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.otherpassdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    margin-top: 10px;
+}
+
+.numcheck{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.charcheck{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4BB543;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {opacity: 0; top: 0;}
+  to {opacity: 1; top: 20px;}
+}
+
+@keyframes fadeout {
+  from {opacity: 1; top: 20px;}
+  to {opacity: 0; top: 0;}
+}
