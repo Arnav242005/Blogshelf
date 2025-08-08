@@ -22,7 +22,7 @@ function Navbar() {
       <nav>
         <ul style={{listStyle:"none"}}>
             <li>
-                 <Link style={{textDecoration:"none", color:"pink"}}><p className='head'>Blogshelf</p></Link>
+                 <Link style={{textDecoration:"none", color:"pink"}} to={"/taskform"}><p className='head'>Blogshelf</p></Link>
             </li>
             <li><Link to={"/alltasks"}><i className="fa-solid fa-bars"></i></Link></li>
             {showLogout && (

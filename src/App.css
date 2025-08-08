@@ -110,6 +110,12 @@ textarea:focus {
   }
 }
 
+@media screen and (max-width: 400px){
+  ul li{
+    margin-right: 10px ;
+  }
+}
+
 .logout-btn {
   position: relative;
   right: 0;
