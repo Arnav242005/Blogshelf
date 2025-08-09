@@ -16,7 +16,7 @@ Title, Description, Date
 
 User-specific task storage
 
-Automatic task deletion after 7 days
+Automatic task deletion after 2 days
 
 💡 Responsive UI with modern glassmorphism + neumorphism
 
